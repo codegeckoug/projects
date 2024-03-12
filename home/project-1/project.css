@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html {
+    overflow-x: hidden;
+}
+.header-flex {
+    display: flex;
+    background-color: black;
+    width: 100%;
+    border: 1px solid black;
+    height: 70px;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    z-index: 100;
+    padding-top: 8px;
+}
+.left-section img {
+    width: 100px;
+    height: 55px;
+    margin: 5px;
+}
+.header-flex .middle-section {
+    flex: 1;
+    max-width: 850px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+
+}
+
+.search-bar {
+    font-size: 16px;
+    height: 38px;
+    padding-left: 5px;
+    border: none;
+    flex:1;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.header-flex .search-button {
+    background-color: rgb(254, 189, 105);
+    border: none;
+    width: 45px;
+    height: 40px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    flex-shrink: 0;
+}
+.search-button img {
+    width: 50%;
+}
+.header-flex .right-section {
+    width: 180px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: end;
+    margin-right: 60px;
+    gap: 30px;
+}
+.cart-icon {
+    width: 50px;
+    height: 40px;
+}
+a {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    border: 1px solid white;
+    width: 80px;
+    height: 45px;
+    border-radius: 2px;
+}
+.header-link {
+    position: relative;
+}
+.cart-number {
+    color: rgb(240, 136, 4);
+    font-size: 16px;
+    font-weight: 700;
+    position: absolute;
+    top: 4px;
+    left: 22px;
+    width: 26px;
+    text-align: center;
+}
+.cart-name {
+    display: inline-block;
+    text-align: center;
+}
+/*.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}*/
+.grid-wrapper .product-image {
+    max-width: 100%;
+    max-height: 100%;
+    padding-top: 40px;
+    padding-bottom: 25px;
+    /*padding-left: 25px;
+    padding-right: 25px;*/
+    display: flex;
+    flex-direction: column;
+}
+.grid-wrapper .image-container  {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    margin-bottom: 20px
+}
+
+.grid-wrapper .product-name {
+    height: 40px;
+    margin-top: 5px;
+    width: 200px;
+    margin-left: 40px;
+}
+.grid-wrapper .product-price {
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.product-rating .fa {
+    color: #ff523b;
+}
+.selector {
+    color: rgb(33, 33, 33);
+    background-color: rgb(240, 240, 240);
+    border: 1px solid rgb(213, 217, 217);
+    border-radius: 8px;
+    padding: 3px 5px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 40px;
+    margin-top: 8px;
+    box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+}
+option {
+    font-weight: normal;
+    display: block;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+    white-space: nowrap;
+}
+.grid-wrapper .cart-button {
+    width: 80%;
+    padding: 8px;
+    border-radius: 50px;
+    color: rgb(33, 33, 33);
+    background-color: rgb(255, 216, 20);
+    border: 1px solid rgb(252, 210, 0);
+    border-radius: 20px;
+    margin-left: 40px;
+    margin-top: 35px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+}
+.grid-wrapper .cart-button-1 {
+    width: 80%;
+    padding: 8px;
+    border-radius: 50px;
+    color: rgb(33, 33, 33);
+    background-color: rgb(255, 216, 20);
+    border: 1px solid rgb(252, 210, 0);
+    border-radius: 20px;
+    margin-left: 40px;
+    margin-top: 200px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+}
+.grid-wrapper .cart-button-1a {
+    width: 80%;
+    padding: 8px;
+    border-radius: 50px;
+    color: rgb(33, 33, 33);
+    background-color: rgb(255, 216, 20);
+    border: 1px solid rgb(252, 210, 0);
+    border-radius: 20px;
+    margin-left: 40px;
+    margin-top: 195px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+}
+.grid-wrapper .cart-button-2 {
+    width: 80%;
+    padding: 8px;
+    border-radius: 50px;
+    color: rgb(33, 33, 33);
+    background-color: rgb(255, 216, 20);
+    border: 1px solid rgb(252, 210, 0);
+    border-radius: 20px;
+    margin-left: 40px;
+    margin-top: 62px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+}
+.grid-wrapper .cart-button-3 {
+width: 80%;
+    padding: 8px;
+    border-radius: 50px;
+    color: rgb(33, 33, 33);
+    background-color: rgb(255, 216, 20);
+    border: 1px solid rgb(252, 210, 0);
+    border-radius: 20px;
+    margin-left: 40px;
+    margin-top: 130px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+}
+
+.grid-wrapper .variation-name {
+    font-weight: 500;
+    margin-bottom: 1px;
+    margin-left: 40px;
+    margin-top: 15px;
+}
+.grid-wrapper  .variation-options-container {
+    cursor: default;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.grid-wrapper .variation-color-1 {
+    border: 2px solid rgb(231, 117, 2);
+    padding: 4px 7px;
+    margin-left: 40px;
+    border-radius: 5px;
+}
+.grid-wrapper .variation-option {
+    background-color: white;
+    border: 1px solid rgb(173, 177, 184);
+    padding: 5px 8px;
+    border-radius: 8px;
+    font-size: 15px;
+    margin-right: 3px;
+    margin-bottom: 7px;
+}
+.grid-wrapper .variation-color-1a {
+    border: 2px solid rgb(231, 117, 2);
+    padding: 0 auto;
+    margin-left: 40px;
+    border-radius: 5px;
+    width: 30px;
+    height: 20px;
+}
+.grid-wrapper .variation-option-1 {
+    background-color: white;
+    border: 1px solid rgb(173, 177, 184);
+    padding: 0 auto;
+    width: 30px;
+    border-radius: 3px;
+    font-size: 15px;
+    margin-right: 3px;
+    margin-bottom: 7px;
+    height: 20px;
+}
+@media only screen and (max-width: 1300px) {
+    .grid-wrapper {
+        display: grid;
+        grid-template-columns:repeat(5,1fr) ;
+    }
+    .product-image {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+

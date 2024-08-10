@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+box-sizing: border-box;
+}
+/*.container {
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+}*/
+header {
+    background: black;
+    border-bottom: solid #ffffff0d;
+   /* place-items: center;
+    display: flex;*/
+    width: 100%;
+    left: 0;
+    padding: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+nav ul li {
+    display: inline-block;
+}
+
+/* .header .nav-bar {
+    display: flex;
+align-items: center;
+    width: 600px;
+    padding-left: 80px;
+}*/
+.brand-image {
+    padding-left:100px;
+}
+.brand-image img {
+    width: 100px;
+}
+nav ul li a {
+    text-decoration: none;
+    /*transition: all .3s ease-in-out;
+    margin-left: 15px;*/
+    color: white;
+    margin-left: 8px;
+
+}
+a span {
+    margin-left: 8px;
+}
+
+nav a span {
+    color:#95959586;
+    border-radius: 3px;
+}
+a.active,a:hover {
+    background-color: #4A2580;
+    transition: .3s;
+    color: #7352a4;
+    padding: 20px 13px;
+    border-radius: 3px;
+}
+/*nav {
+    display: flex;
+flex:1;
+border: 4px solid red;
+
+}
+.nav-links {
+    display: flex;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+.claim {
+    color: white;
+}
+.nav-links ul{
+    list-style-type: none;
+    display: inline-block;
+}
+.nav-links li {
+    display: inline-block;
+
+}*/
+.div-banner {
+    align-items: center;
+    background-color: #4A2580;
+    display: flex;
+    height: 26rem;
+    overflow: hidden;
+    padding: 3rem 0;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+.animtionRing img {
+width: 400px;
+}
+.div-banner .banner_card_heading {
+    color: #fff;
+    font-family: Aldrich, sans-serif;
+    font-weight: 700;
+    max-width: 77.1rem;
+    position: relative;
+    text-transform: uppercase;
+    width: 100%;
+    z-index: 2;
+}
+.animtionRing .ringImg1 {
+    bottom: 0;
+    max-width: 35rem;
+    position: absolute;
+}
+.div-banner .banner_card_sideImg.animtionRing {
+    bottom: -15rem;
+    position: absolute;
+    right: 0;
+    rotate: -30deg;
+    width: 28rem;
+}
+.animtionRing .ringImg2 {
+    bottom: 30rem;
+    left: 0;
+    max-width: 30rem;
+    position: absolute;
+}
+.animtionRing .ringImg3 {
+    bottom: 38.5rem;
+    left: 0;
+    max-width: 18rem;
+    position: absolute;
+}
+.animtionRing .ringImg4 {
+    bottom: 43.5rem;
+    left: -4rem;
+    max-width: 10rem;
+    position: absolute;
+}

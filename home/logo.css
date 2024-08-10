@@ -99,11 +99,16 @@ a:hover {
     display: inline-block;
     text-align: center;
 }
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 /*.grid-wrapper {
     display: grid;
     grid-template-columns: repeat(5,1fr);
 }*/
-.grid-wrapper .product-image {
+.row .product-image {
     max-width: 100%;
     max-height: 100%;
     padding-top: 40px;
@@ -113,7 +118,7 @@ a:hover {
     display: flex;
     flex-direction: column;
 }
-.grid-wrapper .image-container  {
+.row .image-container  {
     margin-top: 80px;
     display: flex;
     justify-content: center;
@@ -122,13 +127,13 @@ a:hover {
     margin-bottom: 20px
 }
 
-.grid-wrapper .product-name {
+.row .product-name {
     height: 40px;
     margin-top: 5px;
     width: 200px;
     margin-left: 40px;
 }
-.grid-wrapper .product-price {
+.row .product-price {
     font-weight: 700;
     margin-bottom: 10px;
     margin-left: 40px;
@@ -157,7 +162,7 @@ option {
     padding: 0px 2px 1px;
     white-space: nowrap;
 }
-.grid-wrapper .cart-button {
+.row .cart-button {
     width: 80%;
     padding: 8px;
     border-radius: 50px;
@@ -170,7 +175,7 @@ option {
     cursor: pointer;
     box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
 }
-.grid-wrapper .cart-button-1 {
+.row .cart-button-1 {
     width: 80%;
     padding: 8px;
     border-radius: 50px;
@@ -183,7 +188,20 @@ option {
     cursor: pointer;
     box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
 }
-.grid-wrapper .cart-button-1a {
+.row .cart-button-1i {
+    width: 80%;
+    padding: 8px;
+    border-radius: 50px;
+    color: rgb(33, 33, 33);
+    background-color: rgb(255, 216, 20);
+    border: 1px solid rgb(252, 210, 0);
+    border-radius: 20px;
+    margin-left: 40px;
+    margin-top: 2;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+}
+.row .cart-button-1a {
     width: 80%;
     padding: 8px;
     border-radius: 50px;
@@ -196,7 +214,7 @@ option {
     cursor: pointer;
     box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
 }
-.grid-wrapper .cart-button-2 {
+.row .cart-button-2 {
     width: 80%;
     padding: 8px;
     border-radius: 50px;
@@ -209,7 +227,7 @@ option {
     cursor: pointer;
     box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
 }
-.grid-wrapper .cart-button-3 {
+.row .cart-button-3 {
 width: 80%;
     padding: 8px;
     border-radius: 50px;
@@ -223,24 +241,24 @@ width: 80%;
     box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
 }
 
-.grid-wrapper .variation-name {
+.row .variation-name {
     font-weight: 500;
     margin-bottom: 1px;
     margin-left: 40px;
     margin-top: 15px;
 }
-.grid-wrapper  .variation-options-container {
+.row  .variation-options-container {
     cursor: default;
     margin-top: 5px;
     margin-bottom: 10px;
 }
-.grid-wrapper .variation-color-1 {
+.row .variation-color-1 {
     border: 2px solid rgb(231, 117, 2);
     padding: 4px 7px;
     margin-left: 40px;
     border-radius: 5px;
 }
-.grid-wrapper .variation-option {
+.row .variation-option {
     background-color: white;
     border: 1px solid rgb(173, 177, 184);
     padding: 5px 8px;
@@ -249,7 +267,7 @@ width: 80%;
     margin-right: 3px;
     margin-bottom: 7px;
 }
-.grid-wrapper .variation-color-1a {
+.row .variation-color-1a {
     border: 2px solid rgb(231, 117, 2);
     padding: 0 auto;
     margin-left: 40px;
@@ -257,7 +275,7 @@ width: 80%;
     width: 30px;
     height: 20px;
 }
-.grid-wrapper .variation-option-1 {
+.row.variation-option-1 {
     background-color: white;
     border: 1px solid rgb(173, 177, 184);
     padding: 0 auto;
@@ -268,7 +286,7 @@ width: 80%;
     margin-bottom: 7px;
     height: 20px;
 }
-@media only screen and (max-width: 1300px) {
+/*@media only screen and (max-width: 1300px) {
     .grid-wrapper {
         display: grid;
         grid-template-columns:repeat(5,1fr) ;
@@ -277,5 +295,5 @@ width: 80%;
         display: flex;
         flex-wrap: wrap;
     }
-}
+}*?
 

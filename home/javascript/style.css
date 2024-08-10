@@ -1,0 +1,60 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url(blobs.jpg);
+  height: 100vh;
+}
+.wrapper {
+  background: white;
+  max-width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 150px;
+  margin-top: 40px;
+  border: 3px solid blue;
+  border-radius: 10px;
+}
+.wrapper h1{
+  font-weight: 700;
+  font-size: 70px;
+}
+.wrapper h2{
+  font-weight: 700;
+  font-size: 70px;
+}
+.js-increment-btn{
+width: 150px;
+height: 50px;
+padding: 8px;
+border: none;
+background-color: blue;
+color: white;
+border-radius: 5px;
+text-align: center;
+cursor: pointer;
+}
+.js-save-btn{
+  width: 150px;
+height: 50px;
+padding: 8px;
+border: none;
+background-color: rgb(75, 183, 75);
+color: white;
+border-radius: 5px;
+text-align: center;
+cursor: pointer;
+margin-top: 20px;
+text-transform: capitalize;
+font-size: 14px;
+}
+.wrapper p {
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 20px;
+}

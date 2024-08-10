@@ -1,0 +1,43 @@
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> paramgaming clone</title>
+    <body>
+
+      <button>9a</button>
+
+<button class="js-button">9b</button>
+
+<button onclick="
+document.querySelector('.js-choice').innerHTML='you choose: heads';
+">heads</button>
+<button onclick="
+document.querySelector('.js-choice').innerHTML='you choose: tails';
+">tails</button>
+
+<p class="js-choice"></p>
+
+<input placeholder="Name" class="js-input" onkeydown="handleNameKeydown(event);">
+<button onclick="
+handleName();
+">Submit</button>
+
+<p class="js-message"></p>
+
+      <script>
+            function handleNameKeydown(event){
+                  console.log(event.key);
+                  if(event.key==='Enter'){
+handleName();
+                  }
+            }
+            function handleName(){
+                  const inputElement=document.querySelector('.js-input');
+document.querySelector('.js-message').innerHTML=`your name is :${inputElement.value}`;
+            }
+console.log(document.querySelector('button'));
+document.querySelector('.js-button').innerHTML='9b done';
+      </script>
+    </body>
+</html>

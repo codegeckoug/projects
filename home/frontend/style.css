@@ -1,0 +1,138 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body,html {
+  background-color:antiquewhite;
+ display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  /*height: 100%;*/
+}
+.container {
+  background: white;
+  border: 1px solid white;
+  border-radius: 20px;
+  margin: 30px auto;
+  padding: 0 15px 0 15px;
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction: column;
+  /*align-items: center;
+  justify-content: center;*/
+}
+
+.recipe img {
+width: 330px;
+height: 180px;
+border: 1px solid white;
+border-radius: 20px;
+margin-left: 18px;
+margin-right: 18px;
+margin-top: 15px;
+}
+.description p {
+  text-align: center;
+  font-size: 12px;
+  width:330px;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: rgb(112, 102, 102);
+}
+.description h1 {
+  margin-left: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.Omelette-prep {
+  width: 330px;
+  height: 110px;
+  background-color: #fff8fb;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-top: 10px;
+  padding-left: 20px;
+}
+.Omelette-prep h6 {
+  padding: 15px 0 5px 0;
+  font-size: 12px;
+  font-weight: bold;
+  color: #87115c;
+}
+
+.Omelette-prep b {
+  font-size: 12px;
+  color: rgb(76, 66, 66);
+}
+.Omelette-prep ul li {
+  font-size: 12px;
+  margin-left: 15px;
+ margin-top: 5px;
+ color: rgb(112, 102, 102);
+}
+.Omelette-ingredients {
+  margin-left: 18px;
+  padding-bottom: 20px;
+}
+.Omelette-ingredients h3 {
+color: #90351c;
+margin-top: 12px;
+}
+.Omelette-ingredients ul li {
+  margin-left: 10px;
+  padding-top: 10px;
+  margin-top: 5px;
+  font-size: 12px;
+  color: rgb(112, 102, 102);
+}
+.Omelette-recipe {
+  margin-left: 18px;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+.Omelette-recipe h3{
+  color: #90351c;
+}
+.Omelette-recipe b {
+  color: rgb(76, 66, 66);
+}
+.Omelette-recipe ol li {
+  width: 330px;
+  font-size: 12px;
+  margin-top: 8px;
+  color: rgb(112, 102, 102);
+}
+.Omelette-nutrition {
+  margin-left: 18px;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+.Omelette-nutrition h3 {
+  color: #90351c;
+}
+.Omelette-nutrition p {
+  font-size: 12px;
+  color: rgb(112, 102, 102);
+  margin-top: 5px;
+width: 330px;
+}
+.nutrition-table {
+  margin-left: 18px;
+}
+.nutrition-table table tr td {
+  font-size: 12px;
+  border-bottom: 1px solid black;
+}
+.food {
+  color: rgb(112, 102, 102);;
+}
+.name {
+border-bottom: 1px soild #ddd;
+padding-left: 60px;
+  color: #90351c;
+}
